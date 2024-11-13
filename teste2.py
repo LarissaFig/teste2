@@ -16,5 +16,5 @@ st.write(x)
 st.date_input('Data de viagem')
 st.time_input('Tempo de escola')
 st.color_picker('Escolha sua cor favorita')
-y = st.color_picker('Escolha sua cor favorita')
+
 

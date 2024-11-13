@@ -10,5 +10,5 @@ st.code("x=2021")
 st.latex(r''' a+a r^1+a r^2+a r^3 ''')
 
 st.select_slider('Qual o grau de satisfação?', [0,100])
-x = st.select_slider('Qual o grau de satisfação?', [0,100])
+x = st.select_slider('Qual o grau de satisfação?', [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100])
 st.write(x)

@@ -19,4 +19,7 @@ st.map(dadosFiltrados, latitude="Lat_d", longitude="Long_d")
 
 qtdmunicipios = len(df['NM_MUNIC'].unique())
 st.write('A quantidade de municípios é', qtdmunicipios)
-st.write('A quantidade de municípios é' + str(qtdmunicipios))
+st.write('A quantidade de municípios é ' + str(qtdmunicipios))
+
+qtdcomunidades = len(df['NM_AGLOM'].unique())
+st.write('A quantidade de comunidades é ' + str(qtdcomunidades))

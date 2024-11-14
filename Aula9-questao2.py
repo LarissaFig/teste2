@@ -27,5 +27,8 @@ st.write('A quantidade de comunidades é ' + str(qtdcomunidades))
 st.header('Número de comunidades por UF')
 st.bar_chart(df['NM_UF'].value_counts())
 
+numero = st.slider('Escolha o número de linhas a serem exibidas', min_value = 0, max_value = 100)
+st.write(df.head(numero))
+
 st.header('Os dez municípios com mais comunidades quilombolas')
 st.bar_chart(df['NM_MUNIC'].value_counts()[:10])

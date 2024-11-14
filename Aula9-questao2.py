@@ -23,3 +23,6 @@ st.write('A quantidade de municípios é ' + str(qtdmunicipios))
 
 qtdcomunidades = len(df['NM_AGLOM'].unique())
 st.write('A quantidade de comunidades é ' + str(qtdcomunidades))
+
+st.header('Número de comunidades por UF')
+st.bar_chart(df['NM_UF'].value_counts())

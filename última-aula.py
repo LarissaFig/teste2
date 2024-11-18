@@ -3,11 +3,11 @@ import pandas as pd
 import requests as rqt
 dadosMulheres = rqt.get('https://dadosabertos.camara.leg.br/api/v2/deputados?siglaSexo=F&ordem=ASC&ordenarPor=nome')
 
-dadosMulheres.headers['Content-Type']
+#dadosMulheres.headers['Content-Type']
 dados_M_json = dadosMulheres.json()
 
 
-dados_M_json.keys()
+#dados_M_json.keys()
 dfmulheres = pd.DataFrame(dados_M_json['dados'])
 
 dfmulheres['sexo'] = 'feminino'
